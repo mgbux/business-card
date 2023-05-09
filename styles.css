@@ -1,0 +1,98 @@
+body {
+    
+    margin: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    object-position: 50% 0%;
+    border: 1px solid #023047;
+    border-radius: 10px;
+    box-shadow: -1px 2px 7px #f07167; 
+}
+
+@keyframes avatar-hover {
+  from {box-shadow: -1px 2px 7px #f07167;}
+  to {box-shadow: -1px 2px 27px #f07167;}
+}
+
+.avatar:hover {
+    animation-name: avatar-hover;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #fdfcdc;
+    color: #023047;
+    border: 6px solid #0081a7;
+    border-radius: 10px; 
+    box-shadow: -4px 6px #f07167, -4px 6px 5px #023047;
+    
+}
+
+@keyframes card-hover1 {
+  from {box-shadow:-4px 6px #f07167, -4px 6px 5px #023047;}
+  to {box-shadow: -9px 11px #f07167, -9px 11px 5px #023047;}
+}
+
+@keyframes card-hover2 {
+  from {background: #fdfcdc;}
+  to {background: #00afb9;}
+}
+
+@keyframes body-hover {
+  from {font-size: 16px;}
+  to {font-size: 18px;}
+}
+
+
+.card:hover {
+    box-shadow: -9px 11px #f07167, -9px 11px 5px #023047;
+    animation-name: card-hover1, card-hover2;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+body:hover {
+    animation-name: body-hover;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+
+
+.text {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+
+
+
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
